@@ -1,13 +1,13 @@
 #lang racket/base
 
-(define (sqrt-1 x)
+(define (sqrt x)
   (sqrt-iter 1.0 x))
 
 (define (sqrt-iter guess x)
   (define new-guess (improve guess x))
   (if
     (good-enough? guess new-guess)
-    guess
+    new-guess
     (sqrt-iter new-guess x)))
 
 (define (improve guess x)
@@ -18,3 +18,5 @@
 
 (define (good-enough? guess new-guess)
   (< (abs (- new-guess guess)) 0.001))
+
+(provide my-sqrt)
