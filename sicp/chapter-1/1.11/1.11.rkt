@@ -9,7 +9,10 @@
             (f-rec (- n 3)))))
 
 (define (f-it n)
-    (f-iter 2 1 0 n))
+    (if
+        (< n 3)
+        n
+        (f-iter 2 1 0 n)))
 
 (define (f-iter product product-1 product-2 counter)
     (if (< counter 3)
