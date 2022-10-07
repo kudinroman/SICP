@@ -11,6 +11,7 @@
 (check-equal? (expt 2 8) 256)
 (check-equal? (expt 2 9) 512)
 (check-equal? (expt 2 10) 1024)
+(check-equal? (expt 2 11) 2048)
 
 (check-equal? (expt 3 2) 9)
 (check-equal? (expt 3 3) 27)
