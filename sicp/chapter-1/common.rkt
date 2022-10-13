@@ -5,5 +5,12 @@
 (define (inc x) (+ x 1))
 (define (square x) (* x x))
 (define (cube x) (* x x x))
+(define (init x) x)
 
-(provide half double inc square cube)
+(provide
+    half
+    double
+    inc
+    square
+    cube
+    init)
