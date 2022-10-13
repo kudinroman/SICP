@@ -6,6 +6,8 @@
 (define (square x) (* x x))
 (define (cube x) (* x x x))
 (define (init x) x)
+(define (sum x y) (+ x y))
+(define (mult x y) (* x y))
 
 (provide
     half
@@ -13,4 +15,6 @@
     inc
     square
     cube
-    init)
+    init
+    sum
+    mult)
