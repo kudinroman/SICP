@@ -1,3 +1,5 @@
+#lang racket/base
+
 (/ (+ 5 4
         (- 2 
             (- 3 
@@ -6,3 +8,5 @@
     (* 3 
         (- 6 2)
         (- 2 7)))
+
+(module test racket/base)

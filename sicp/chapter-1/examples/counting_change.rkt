@@ -1,3 +1,5 @@
+#lang racket/base
+
 (define (count-change amount) (cc amount 5))
 
 (define (cc amount kinds-of-coins)
@@ -17,3 +19,5 @@
     ((= kinds-of-coins 5) 50)))
 
 (count-change 11)
+
+(module test racket/base)

@@ -3,6 +3,7 @@
 (define (half x) (/ x 2))
 (define (double x) (+ x x))
 (define (inc x) (+ x 1))
+(define (dec x) (- x 1))
 (define (square x) (* x x))
 (define (cube x) (* x x x))
 (define (init x) x)
@@ -13,6 +14,7 @@
     half
     double
     inc
+    dec
     square
     cube
     init

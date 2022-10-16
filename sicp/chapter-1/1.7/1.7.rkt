@@ -1,6 +1,6 @@
 #lang racket/base
 
-(define (sqrt x)
+(define (my-sqrt x)
   (sqrt-iter 1.0 x))
 
 (define (sqrt-iter guess x)
