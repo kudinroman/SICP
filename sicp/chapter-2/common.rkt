@@ -15,10 +15,16 @@
     (op (car sequence)
         (accumulate-new op initial (cdr sequence)))))
 
+(define (enumerate-interval low high)
+  (if (> low high)
+    null 
+    (cons low (enumerate-interval (+ 1 low) high))))
+
 (provide
     average
     make-point
     x-point
     y-point
     accumulate-new
+    enumerate-interval
     )
