@@ -20,6 +20,9 @@
     null 
     (cons low (enumerate-interval (+ 1 low) high))))
 
+(define (flatmap proc seq)
+  (foldr append (list) (map proc seq)))
+
 (provide
     average
     make-point
@@ -27,4 +30,5 @@
     y-point
     accumulate-new
     enumerate-interval
+    flatmap
     )
