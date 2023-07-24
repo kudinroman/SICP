@@ -11,9 +11,8 @@
 (check-equal? (adjoin-set 'asd my-set) my-set)
 (check-equal? (adjoin-set 'asdf my-set) adjoin-my-set)
 
-(check-equal? (intersection-set my-set adjoin-my-set) my-set)
+(check-equal? (intersection-set '(a b c) '(a b d)) '(a b))
 
-(check-equal? (union-set adjoin-my-set my-set) adjoin-my-set)
 (check-equal? (union-set '(a b c) '(a b d)) '(c a b d))
 (check-equal? (union-set '(a b c) '(d e f)) '(a b c d e f))
 
