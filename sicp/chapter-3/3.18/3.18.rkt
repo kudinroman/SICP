@@ -1,6 +1,6 @@
 #lang racket/base
 
-(require rnrs/mutable-pairs-6 rnrs/mutable-pairs-6)
+(require rnrs/mutable-pairs-6)
 
 (define (disp label value)
   (display label)
