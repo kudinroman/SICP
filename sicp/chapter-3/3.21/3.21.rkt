@@ -14,7 +14,7 @@
 
 (define (front-queue queue)
   (if (empty-queue? queue)
-    (error "FRONT has beee invoked with empty queue" error)
+    (error "FRONT has beee invoked with empty queue" queue)
     (mcar (front-ptr queue))))
 
 (define (insert-queue! queue item)
@@ -30,7 +30,7 @@
 
 (define (delete-queue! queue)
   (cond ((empty-queue? queue)
-         (error "DELETE has been invoked with empty queue"))
+         (error "DELETE has been invoked with empty queue" queue))
          (else
            (set-front-ptr! queue (mcdr (front-ptr queue)))
            queue)))
