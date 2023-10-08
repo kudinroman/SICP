@@ -14,6 +14,4 @@
 (insert! t2 '(1 2 3 4 5) v2)
 (check-equal? (lookup t2 '(1 2 3 4 5)) v2)
 (check-equal? (lookup t2 '(1 2 3 5)) #f)
-
-(insert! t2 '(1 2 3 5 9) 333)
 (show t2)
